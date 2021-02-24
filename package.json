@@ -1,0 +1,28 @@
+{
+  "name": "intern-db2",
+  "version": "1.0.0",
+  "description": "try this ToDo app here:  https://andrew0007-sys.github.io/intern-DB2/ToDo.html",
+  "main": "ToDo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew0007-sys/intern-DB2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrew0007-sys/intern-DB2/issues"
+  },
+  "homepage": "https://github.com/Andrew0007-sys/intern-DB2#readme",
+  "dependencies": {
+    "socket.io": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.2.1"
+  }
+}

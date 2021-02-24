@@ -1,0 +1,252 @@
+html{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background: -webkit-linear-gradient(45deg, rgb(132, 106, 228), rgb(115, 162, 190), rgb(44, 74, 128));
+    background: -moz-linear-gradient(45deg, rgb(132, 106, 228), rgb(115, 162, 190), rgb(44, 74, 128));
+    background: linear-gradient(45deg, rgb(132, 106, 228), rgb(115, 162, 190), rgb(44, 74, 128));
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+ul {
+	all: unset;
+}
+
+ul li {
+	all: unset;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	display: relative;
+}
+.container .todo-app-wrapper {
+	content: '';
+	position: absolute ;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	padding: 15px;
+}
+h1 {
+	text-align: center;
+}
+.container .todo-app-wrapper .add-todo-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.container .todo-app-wrapper .add-todo-wrapper .input-wrapper input {
+	padding: 10px;
+  	font-size: 20px;
+	height: 50px;
+	width: 450px;
+  	border: 8px solid rgba(255, 255, 255, 0.5);
+  	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	-webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+  	background: rgba(255, 255, 255, 0.5);
+  	-moz-appearance: none;
+  	-webkit-appearance: none;
+  	outline: none;
+  	color: #333;
+}
+.container .todo-app-wrapper .add-todo-wrapper .button-wrapper button{
+	position: relative;
+	border-radius: 10px;
+	font-size: 25px;
+	color: slateblue;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+.container .todo-app-wrapper .add-todo-wrapper .button-wrapper button:active{
+	transform: translate(0px,5px);
+ 	 -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.container .todo-app-wrapper .search-todo-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.container .todo-app-wrapper .search-todo-wrapper input {
+	padding: 10px;
+  	font-size: 20px;
+	height: 50px;
+	width: 560px;
+  	border: 8px solid rgba(255, 255, 255, 0.5);
+  	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	-webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset, 0 2px 10px rgba(0, 0, 0, 0.25);
+  	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+  	background: rgba(255, 255, 255, 0.5);
+  	-moz-appearance: none;
+  	-webkit-appearance: none;
+  	outline: none;
+  	color: #333;
+	margin-bottom: 20px;
+}
+.container .todo-app-wrapper .filter-btn-wrapper {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.container .todo-app-wrapper .filter-btn-wrapper button {
+	position: relative;
+	border-radius: 10px;
+	font-size: 25px;
+	color: slateblue;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.container .todo-app-wrapper .filter-btn-wrapper button:active {
+	transform: translate(0px,5px);
+ 	 -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.container .todo-app-wrapper .prior-btn-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 18px;
+	font-weight: bold;
+}
+.container .todo-app-wrapper .prior-btn-wrapper button {
+	position: relative;
+	border-radius: 10px;
+	font-size: 25px;
+	color: slateblue;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+.container .todo-app-wrapper .prior-btn-wrapper button:active {
+	transform: translate(0px,5px);
+ 	 -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+h2 {
+	text-align: center;
+}
+
+
+.todos-wrapper .todo-item {
+	width: 100%;
+	font-size: 18px;
+	line-height: 35px;
+	color: white;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li.todo-item.hide {
+    display: none;
+} 
+
+.todos-wrapper .todo-item .description {
+	width: 440px;
+	min-height: 35px;
+	word-break: break-all;
+	background-color: slateblue;
+	border-radius: 10px;
+	padding: 4px 10px;
+}
+.todos-wrapper .todo-item .buttons {
+	width: 80px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.todos-wrapper .todo-item .buttons button {
+	border-radius: 10px;
+	font-size: 25px;
+	color: slateblue;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+
+.checked .description {
+	text-decoration: line-through;
+	transition: 1s;
+	opacity: .6;
+}
+
+.btn-complete {
+	cursor: pointer;
+}
+/*-----------do responsive--------------------------------------------*/
+
+@media(max-width: 574px){
+	.container .todo-app-wrapper .add-todo-wrapper {
+		display: block;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.container .todo-app-wrapper .add-todo-wrapper .input-wrapper {
+		display: flex;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.container .todo-app-wrapper .add-todo-wrapper .button-wrapper {
+		width: 25%;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.container .todo-app-wrapper .search-todo-wrapper {
+		display: flex;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.container .todo-app-wrapper .filter-btn-wrapper {
+		display: flex;
+		width: 320px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.container .todo-app-wrapper .prior-btn-wrapper {
+		display: flex;
+		width: 320px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+	.container .todo-app-wrapper .prior-btn-wrapper button:not(:last-child) {
+		 margin-bottom: 10px;
+	}
+	ul.todos-wrapper {
+		width: 320px;
+		display: block;
+		margin: 0 auto;
+	}
+	.todos-wrapper .todo-item .description {
+		width: 220px;
+	}
+	.todos-wrapper .todo-item .buttons button {
+		border-radius: 8px;
+		font-size: 15px;
+
+	}
+}

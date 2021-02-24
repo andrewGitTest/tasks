@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="todo-app-wrapper">
+		<h1>ToDo App</h1>
+			<div class="add-todo-wrapper">
+				<div class="input-wrapper">
+					<input type="text" id="description-task">
+				</div>
+				<div class="button-wrapper">
+					<button class="animate" id="add-task-btn">Save</button>
+				</div>
+			</div>
+			<div class="search-todo-wrapper">
+				<input type="text" id="search-todo" placeholder="Type for search">
+			</div>
+			<div class="filter-btn-wrapper">
+				<button class="animate" id="all-btn">All</button>
+				<button class="animate" id="done-btn">Done</button>
+				<button class="animate" id="undone-btn">Undone</button>
+			</div>
+			<div class="prior-btn-wrapper">
+				<p>Sort by priority:</p>
+				<button class="animate" id="hight-prior">Ascending order</button>
+				<button class="animate" id="lower-prior">Descending order</button>
+			</div>
+			<h2>Everyday tasks</h2>
+			<ul class="todos-wrapper">
+				
+			</ul>
+		</div>
+	</div>
+	<script src="ToDo.js"></script>
+</body>
+</html>
